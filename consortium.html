@@ -28,9 +28,9 @@
 
   <main>
 
-    <div class="page-hero">
+    <div class="hero">
       <div class="container">
-        <p class="page-hero__label">Consortium</p>
+        <p class="hero__label">Consortium</p>
         <h1>Research Partners</h1>
         <p>The academic institutions and industry advisors driving CodeGuard forward.</p>
       </div>
@@ -58,7 +58,6 @@
               </a>
             </p>
             <div class="contact-box">
-              <span class="contact-box__icon">✉</span>
               <div>
                 <p class="contact-box__name">Coen De Roover</p>
                 <p class="contact-box__detail">
@@ -86,7 +85,6 @@
               </a>
             </p>
             <div class="contact-box">
-              <span class="contact-box__icon">✉</span>
               <div>
                 <p class="contact-box__name"> Bert Lagaisse</p>
                 <p class="contact-box__detail">
@@ -109,37 +107,45 @@
         <p>
           The project is guided by an advisory board of industry partners who provide practical
           insights, real-world use cases, and validation of research outcomes.
-          The board is composed primarily of SMEs involved in software development, including:
+          The board is composed of companies that want to enable <strong>secure code generation</strong>
+          when integrating large language models (LLMs) into their software development lifecycle, including:
         </p>
         <ul style="margin: 1rem 0 2.5rem;">
-          <li><strong>Software product developers</strong> — benefit from early detection of vulnerabilities before
-            products ship</li>
-          <li><strong>Security consultants</strong> — leverage state-of-the-art methodologies for client engagements
-          </li>
-          <li><strong>DevOps engineers</strong> — gain practical knowledge for building secure deployment pipelines</li>
+          <li><strong>AI project developers</strong> — benefit from early detection of vulnerabilities in AI-generated code</li>
+          <li><strong>Software engineers</strong> — adopt state-of-the-art guardrails for LLM-assisted development in client engagements</li>
+          <li><strong>AI engineers</strong> — ensure that LLM-integrated pipelines produce reliable, secure, and compliant code</li>
         </ul>
 
         <hr>
 
         <p class="section-label">Partnership</p>
         <h2>Get Involved</h2>
-        <p>We welcome collaboration with organisations interested in code security. Reach out if you want to:</p>
+        <p>We welcome collaboration with organisations interested in including AI in software development process. Reach
+          out if you want to:</p>
         <ul style="margin: 1rem 0;">
-          <li>Implement advanced security testing in your development workflow</li>
-          <li>Contribute real-world security scenarios to the research</li>
+          <li>Discover advanced prompt engineering and retrieval augmented generation strategies for secure code
+            generation.</li>
+          <li>Include guardrails in your AI-augmented software development lifecycle</li>
           <li>Access state-of-the-art tools and methodologies</li>
           <li>Participate in workshops and hands-on training</li>
         </ul>
 
         <div class="contact-box" style="margin-top:1.5rem;">
-          <span class="contact-box__icon">✉</span>
+
           <div>
+
             <p class="contact-box__name">Bert Lagaisse</p>
-            <p class="contact-box__detail" style="color:#888; font-size:0.8rem; margin-bottom:0.2rem;">KU Leuven,
-              DistriNet, iDeas Research Group</p>
             <p class="contact-box__detail">
               <a href="#" onclick="window.location.href='mailto:'+'bert.lagaisse'+'@'+'kuleuven.be';return false;">
                 bert.lagaisse [at] kuleuven [dot] be
+              </a>
+            </p>
+          </div>
+          <div>
+            <p class="contact-box__name">Coen De Roover</p>
+            <p class="contact-box__detail">
+              <a href="#" onclick="window.location.href='mailto:'+'coen.deroover'+'@'+'vub.be';return false;">
+                coen.deroover [at] vub [dot] be
               </a>
             </p>
           </div>
@@ -153,23 +159,24 @@
         <div class="benefit-grid">
           <div class="benefit-item">
             <div class="benefit-item__icon">🔬</div>
-            <h4>Advanced Tools</h4>
-            <p>Early access to state-of-the-art code security testing tools and methodologies.</p>
+            <h4>Advanced AI methods</h4>
+            <p>Early access to state-of-the-art prompt engineering and retrieval augmented generation strategies for
+              secure code generation.</p>
           </div>
           <div class="benefit-item">
             <div class="benefit-item__icon">✓</div>
             <h4>Compliance Guidance</h4>
-            <p>Practical support meeting OWASP, CWE, and software security standards.</p>
+            <p>Practical support with guardrails for AI-augmented software development lifecycle.</p>
           </div>
           <div class="benefit-item">
             <div class="benefit-item__icon">🤝</div>
             <h4>Expert Network</h4>
-            <p>Connect with leading security researchers and industry practitioners.</p>
+            <p>Connect with leading researchers and practitioners in AI-augmented secure software development.</p>
           </div>
           <div class="benefit-item">
             <div class="benefit-item__icon">📚</div>
             <h4>Hands-on Training</h4>
-            <p>Participate in practical workshops tailored to your team's needs.</p>
+            <p>Participate in practical workshops and training sessions tailored to your team's needs.</p>
           </div>
         </div>
 
@@ -178,11 +185,89 @@
 
   </main>
 
-  <footer class="site-footer">
-    <div class="container--wide">
-      <div class="footer-inner">
-        <span class="footer-brand">CodeGuard</span>
-        <span class="footer-copy">A project on code security testing and automation.</span>
+
+  <footer class="site-footer" style="padding: 0.5em 0 0.5em 0; font-size: 0.95em">
+    <div class="wrapper" style="padding: 0">
+      <div class="footer-row" style="
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 2em;
+                        flex-wrap: nowrap;
+                    ">
+        <!-- Research Partners Column -->
+        <div style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            flex: 1;
+                            min-width: 220px;
+                            max-width: 300px;
+                        ">
+          <div class="footer-partners-title" style="
+                                font-size: 1em;
+                                text-align: center;
+                                margin-bottom: 0.1em;
+                            ">
+            Research Partners
+          </div>
+          <div class="footer-logos" style="
+                                display: flex;
+                                gap: 0.5em;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                            ">
+            <a href="http://iiw.kuleuven.be/onderzoek/distrinet/" target="_blank" rel="noopener noreferrer"
+              title="KU Leuven DistriNet">
+              <img src="/assets/images/kul_distrinet.png" alt="KU Leuven DistriNet"
+                style="max-height: 50px; max-width: 150px" />
+            </a>
+            <a href="https://soft.vub.ac.be/" target="_blank" rel="noopener noreferrer"
+              title="VUB Software Languages Lab">
+              <img src="/assets/images/vub_soft.png" alt="VUB Software Languages Lab"
+                style="max-height: 40px; max-width: 100px" />
+            </a>
+          </div>
+        </div>
+        <!-- Funded By Column -->
+        <div style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            flex: 1;
+                            min-width: 220px;
+                            max-width: 300px;
+                        ">
+          <div class="footer-partners-title" style="
+                                font-size: 1em;
+                                text-align: center;
+                                margin-bottom: 0.1em;
+                            ">
+            Funded by
+          </div>
+          <div class="footer-logo-funded" style="
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                            ">
+            <a href="https://www.vlaio.be/" target="_blank" rel="noopener noreferrer"
+              title="VLAIO - Flanders Innovation & Entrepreneurship">
+              <img src="/assets/images/vlaio.png" alt="VLAIO" style="max-height: 38px; max-width: 110px" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="
+                        text-align: center;
+                        font-size: 0.92em;
+                        color: #666;
+                        margin-top: 0.5em;
+                    ">
+        CodeGuard - a Vlaio/Coock+ project on safe AI code assistant
+        integration.
       </div>
     </div>
   </footer>
