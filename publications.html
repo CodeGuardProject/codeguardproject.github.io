@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications — CodeGuard</title>
+  <meta name="description" content="Research publications, articles, and outputs from the CodeGuard project.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container--wide">
+      <div class="nav-inner">
+        <a class="site-brand" href="index.html">CodeGuard</a>
+        <nav class="site-nav">
+          <a href="index.html">Index</a>
+          <a href="workpackages.html">Work Packages</a>
+          <a href="knowledge-transfer.html">Knowledge Transfer</a>
+          <a href="consortium.html">Consortium</a>
+          <a href="publications.html">Publications</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-hero">
+      <div class="container">
+        <p class="page-hero__label">Publications</p>
+        <h1>Publications</h1>
+        <p>Research outputs, papers, and articles from the CodeGuard team.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+
+        <input class="search-box" type="text" id="searchInput" placeholder="Search posts…" autocomplete="off">
+        <p class="search-hint" id="searchResults"></p>
+
+        <!-- ═══════════════════════════════════════════
+             BLOG POSTS — copy a .blog-post.card block per post.
+             Add the search <script> below back when there are posts.
+             ═══════════════════════════════════════════
+
+        <div class="card-list" id="blogPosts">
+
+          <div class="blog-post card">
+            <p class="card__meta">MONTH DD, YYYY &nbsp;·&nbsp; Author Name</p>
+            <h3><a href="LINK">Post Title</a></h3>
+            <p>Short excerpt or description of the post.</p>
+            <a class="card__link" href="LINK">Read →</a>
+          </div>
+
+        </div>
+
+        -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" style="padding: 0.5em 0 0.5em 0; font-size: 0.95em">
+    <div class="wrapper" style="padding: 0">
+      <div class="footer-row" style="
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 2em;
+                        flex-wrap: nowrap;
+                    ">
+        <!-- Research Partners Column -->
+        <div style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            flex: 1;
+                            min-width: 220px;
+                            max-width: 300px;
+                        ">
+          <div class="footer-partners-title" style="
+                                font-size: 1em;
+                                text-align: center;
+                                margin-bottom: 0.1em;
+                            ">
+            Research Partners
+          </div>
+          <div class="footer-logos" style="
+                                display: flex;
+                                gap: 0.5em;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                            ">
+            <a href="http://iiw.kuleuven.be/onderzoek/distrinet/" target="_blank" rel="noopener noreferrer"
+              title="KU Leuven DistriNet">
+              <img src="assets/images/kul_distrinet.png" alt="KU Leuven DistriNet"
+                style="max-height: 50px; max-width: 150px" />
+            </a>
+            <a href="https://soft.vub.ac.be/" target="_blank" rel="noopener noreferrer"
+              title="VUB Software Languages Lab">
+              <img src="assets/images/vub_soft.png" alt="VUB Software Languages Lab"
+                style="max-height: 40px; max-width: 100px" />
+            </a>
+          </div>
+        </div>
+        <!-- Funded By Column -->
+        <div style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            flex: 1;
+                            min-width: 220px;
+                            max-width: 300px;
+                        ">
+          <div class="footer-partners-title" style="
+                                font-size: 1em;
+                                text-align: center;
+                                margin-bottom: 0.1em;
+                            ">
+            Funded by
+          </div>
+          <div class="footer-logo-funded" style="
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                            ">
+            <a href="https://www.vlaio.be/" target="_blank" rel="noopener noreferrer"
+              title="VLAIO - Flanders Innovation & Entrepreneurship">
+              <img src="assets/images/vlaio.png" alt="VLAIO" style="max-height: 38px; max-width: 110px" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div style="
+                        text-align: center;
+                        font-size: 0.92em;
+                        color: #666;
+                        margin-top: 0.5em;
+                    ">
+        CodeGuard - a Vlaio/Coock+ project on safe AI code assistant
+        integration.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const input = document.getElementById('searchInput');
+    const hint = document.getElementById('searchResults');
+    const posts = document.querySelectorAll(".publication-item");
+
+    input.addEventListener('keyup', () => {
+      const q = input.value.trim().toLowerCase();
+      let count = 0;
+      posts.forEach(p => {
+        const match = p.textContent.toLowerCase().includes(q);
+        p.style.display = match ? '' : 'none';
+        if (match) count++;
+      });
+      hint.textContent = q
+        ? `${count} post${count !== 1 ? 's' : ''} found`
+        : '';
+    });
+  </script>
+
+</body>
+
+</html>

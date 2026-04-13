@@ -167,7 +167,26 @@ hr {
 .hero {
     padding: 7rem 0 5rem;
     border-bottom: 1px solid #ede9fe;
+    position: relative;
+    background:
+        linear-gradient(135deg,
+            rgba(124, 58, 237, 0.55) 0%,
+            rgba(167, 139, 250, 0.25) 60%,
+            rgba(255, 255, 255, 0.08) 100%),
+        url('assets/images/hero-bg.png') center/cover no-repeat;
+    overflow: hidden;
 }
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    pointer-events: none;
+}
+
+.hero .container { position: relative; z-index: 1; }
 
 .hero__label {
     display: inline-flex;
@@ -177,7 +196,7 @@ hr {
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #7c3aed;
+    color: #e9d5ff;
     margin-bottom: 1.5rem;
 }
 
@@ -186,22 +205,23 @@ hr {
     display: inline-block;
     width: 20px;
     height: 1px;
-    background: #7c3aed;
+    background: #e9d5ff;
 }
 
 .hero h1 {
     margin-bottom: 1.5rem;
     max-width: 700px;
+    color: #ffffff;
 }
 
 .hero h1 em {
     font-style: italic;
-    color: #7c3aed;
+    color: #c4b5fd;
 }
 
 .hero__sub {
     font-size: 1.05rem;
-    color: #555;
+    color: rgba(255, 255, 255, 0.82);
     max-width: 520px;
     margin-bottom: 2.5rem;
     line-height: 1.8;
@@ -373,23 +393,43 @@ hr {
 .page-hero {
     padding: 4rem 0 3rem;
     border-bottom: 1px solid #ede9fe;
+    position: relative;
+    background:
+        linear-gradient(135deg,
+            rgba(124, 58, 237, 0.55) 0%,
+            rgba(167, 139, 250, 0.25) 60%,
+            rgba(255, 255, 255, 0.08) 100%),
+        url('assets/images/hero-bg.png') center/cover no-repeat;
+    overflow: hidden;
 }
+
+.page-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    pointer-events: none;
+}
+
+.page-hero .container { position: relative; z-index: 1; }
 
 .page-hero__label {
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #7c3aed;
+    color: #e9d5ff;
     margin-bottom: 0.75rem;
 }
 
 .page-hero h1 {
     margin-bottom: 0.75rem;
+    color: #ffffff;
 }
 .page-hero p {
     font-size: 1.05rem;
-    color: #555;
+    color: rgba(255, 255, 255, 0.78);
     max-width: 560px;
 }
 
