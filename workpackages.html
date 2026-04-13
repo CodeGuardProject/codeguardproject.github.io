@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Work Packages — CodeGuard</title>
+        <meta
+            name="description"
+            content="Overview of the CodeGuard project work packages covering LLM security research, prompt engineering, guardrails, knowledge transfer, and dissemination."
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="container--wide">
+                <div class="nav-inner">
+                    <a class="site-brand" href="index.html">CodeGuard</a>
+                    <nav class="site-nav">
+                        <a href="index.html">Index</a>
+                        <a href="workpackages.html">Work Packages</a>
+                        <a href="knowledge-transfer.html">Knowledge Transfer</a>
+                        <a href="consortium.html">Consortium</a>
+                        <a href="blog.html">Blog</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__label">Project Structure</div>
+                    <h1>
+                        Work Packages<br /><em>Research to implementation</em>
+                    </h1>
+                    <p class="hero__sub">
+                        CodeGuard is structured around five interconnected work
+                        packages that span research, practical implementation,
+                        knowledge transfer, and broad dissemination.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Overview -->
+            <section class="section">
+                <div class="container prose">
+                    <h2>Five pillars of the project</h2>
+                    <p>
+                        The CodeGuard project is organized into five work
+                        packages, each addressing a critical aspect of safe AI
+                        code assistant integration.
+                    </p>
+                </div>
+            </section>
+
+            <!-- WP1 -->
+            <section class="section" style="background: #f9f9f9">
+                <div class="container">
+                    <div class="wp-header">
+                        <div class="wp-number">WP1</div>
+                        <div>
+                            <h2>
+                                Knowledge Building on LLM Issues and Model
+                                Comparison
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="prose">
+                        <p>
+                            In this work package, in-depth knowledge is built
+                            regarding the risks and limitations of LLM-based
+                            code generation. The researchers analyze typical
+                            vulnerabilities such as hardcoded secrets,
+                            hallucinated packages, and insecure authentication.
+                            Additionally, various LLM models such as Codex,
+                            GPT-4.5, GPT-5, Claude 3.5, Gemini 2.5, Code LLaMA,
+                            and DeepSeek R1 are compared in terms of security,
+                            reliability, and usability. The findings are
+                            compiled into an overview report with
+                            recommendations for secure LLM integration.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WP2 -->
+            <section class="section">
+                <div class="container">
+                    <div class="wp-header">
+                        <div class="wp-number">WP2</div>
+                        <div>
+                            <h2>
+                                Translation Research into Prompt Engineering and
+                                RAG
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="prose">
+                        <p>
+                            This work package investigates how secure and
+                            context-aware prompts can be designed to improve the
+                            quality of LLM output. Guidelines and templates are
+                            developed for secure prompt engineering, and various
+                            prompt strategies are experimented with.
+                            Additionally, research is being conducted into how
+                            Retrieval-Augmented Generation (RAG) can be
+                            integrated via tools such as LlamaIndex, so that
+                            LLMs gain access to current and domain-specific
+                            information during code generation.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WP3 -->
+            <section class="section" style="background: #f9f9f9">
+                <div class="container">
+                    <div class="wp-header">
+                        <div class="wp-number">WP3</div>
+                        <div>
+                            <h2>
+                                Translation Research into Guardrails, Static
+                                Analysis, and Tracking
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="prose">
+                        <p>
+                            In WP3, the focus is on validating and securing LLM
+                            output via analysis tools and guardrails. Static
+                            analysis tools such as CodeQL and SAST/SCA scanners
+                            are being evaluated, and integration templates are
+                            being developed for CI/CD pipelines. Furthermore,
+                            research is being conducted into how interactions
+                            between developers and LLMs can be logged and
+                            analyzed, with the aim of making generated code
+                            traceable throughout the development process and
+                            ultimately setting up dashboards that provide
+                            insight into the security, efficiency, and impact of
+                            LLM usage.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WP4 -->
+            <section class="section">
+                <div class="container">
+                    <div class="wp-header">
+                        <div class="wp-number">WP4</div>
+                        <div>
+                            <h2>Knowledge Transfer via Workshops</h2>
+                        </div>
+                    </div>
+                    <div class="prose">
+                        <p>
+                            This work package organizes interactive knowledge
+                            and hands-on workshops for companies. Participants
+                            learn how LLMs can be safely deployed in their
+                            development processes, using practical examples and
+                            demonstrators. The workshops cover topics including
+                            safe prompt formulation, the use of analysis tools,
+                            and interpreting LLM output. The sessions are
+                            supported by practice material and feedback rounds
+                            to maximize impact.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WP5 -->
+            <section class="section" style="background: #f9f9f9">
+                <div class="container">
+                    <div class="wp-header">
+                        <div class="wp-number">WP5</div>
+                        <div>
+                            <h2>
+                                Public Dissemination via Conferences, Blogs, and
+                                White Papers
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="prose">
+                        <p>
+                            Finally, WP5 ensures the broad dissemination of the
+                            project results. Blog articles and white papers are
+                            published, and presentations are given at relevant
+                            conferences and events. In addition, a community of
+                            practice is established in which companies,
+                            researchers, and policymakers can exchange
+                            experiences regarding safe LLM integration. This
+                            community contributes to the long-term consolidation
+                            and dissemination of knowledge and further
+                            valorization of project results.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer
+            class="site-footer"
+            style="padding: 0.5em 0 0.5em 0; font-size: 0.95em"
+        >
+            <div class="wrapper" style="padding: 0">
+                <div
+                    class="footer-row"
+                    style="
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 2em;
+                        flex-wrap: nowrap;
+                    "
+                >
+                    <!-- Research Partners Column -->
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            flex: 1;
+                            min-width: 220px;
+                            max-width: 300px;
+                        "
+                    >
+                        <div
+                            class="footer-partners-title"
+                            style="
+                                font-size: 1em;
+                                text-align: center;
+                                margin-bottom: 0.1em;
+                            "
+                        >
+                            Research Partners
+                        </div>
+                        <div
+                            class="footer-logos"
+                            style="
+                                display: flex;
+                                gap: 0.5em;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                            "
+                        >
+                            <a
+                                href="http://iiw.kuleuven.be/onderzoek/distrinet/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="KU Leuven DistriNet"
+                            >
+                                <img
+                                    src="/assets/images/kul_distrinet.png"
+                                    alt="KU Leuven DistriNet"
+                                    style="max-height: 50px; max-width: 150px"
+                                />
+                            </a>
+                            <a
+                                href="https://soft.vub.ac.be/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="VUB Software Languages Lab"
+                            >
+                                <img
+                                    src="/assets/images/vub_soft.png"
+                                    alt="VUB Software Languages Lab"
+                                    style="max-height: 40px; max-width: 100px"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Funded By Column -->
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            flex: 1;
+                            min-width: 220px;
+                            max-width: 300px;
+                        "
+                    >
+                        <div
+                            class="footer-partners-title"
+                            style="
+                                font-size: 1em;
+                                text-align: center;
+                                margin-bottom: 0.1em;
+                            "
+                        >
+                            Funded by
+                        </div>
+                        <div
+                            class="footer-logo-funded"
+                            style="
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                            "
+                        >
+                            <a
+                                href="https://www.vlaio.be/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="VLAIO - Flanders Innovation & Entrepreneurship"
+                            >
+                                <img
+                                    src="/assets/images/vlaio.png"
+                                    alt="VLAIO"
+                                    style="max-height: 38px; max-width: 110px"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="
+                        text-align: center;
+                        font-size: 0.92em;
+                        color: #666;
+                        margin-top: 0.5em;
+                    "
+                >
+                    CodeGuard - a Vlaio/Coock+ project on safe AI code assistant
+                    integration.
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
