@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog — CodeGuard</title>
+  <meta name="description" content="Insights, updates, and research notes from the CodeGuard team.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container--wide">
+      <div class="nav-inner">
+        <a class="site-brand" href="../index.html">CodeGuard</a>
+        <nav class="site-nav">
+          <a href="../index.html">Index</a>
+          <a href="../knowledge-transfer.html">Knowledge Transfer</a>
+          <a href="../consortium.html">Consortium</a>
+          <a href="../blog.html">Blog</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-hero">
+      <div class="container">
+        <p class="page-hero__label">Blog</p>
+        <h1>Writing</h1>
+        <p>Insights, research notes, and updates from the CodeGuard team.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+
+        <input
+          class="search-box"
+          type="text"
+          id="searchInput"
+          placeholder="Search posts…"
+          autocomplete="off"
+        >
+        <p class="search-hint" id="searchResults"></p>
+
+        <!-- ═══════════════════════════════════════════
+             BLOG POSTS — copy a .blog-post.card block per post.
+             Add the search <script> below back when there are posts.
+             ═══════════════════════════════════════════
+
+        <div class="card-list" id="blogPosts">
+
+          <div class="blog-post card">
+            <p class="card__meta">MONTH DD, YYYY &nbsp;·&nbsp; Author Name</p>
+            <h3><a href="LINK">Post Title</a></h3>
+            <p>Short excerpt or description of the post.</p>
+            <a class="card__link" href="LINK">Read →</a>
+          </div>
+
+        </div>
+
+        -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container--wide">
+      <div class="footer-inner">
+        <span class="footer-brand">CodeGuard</span>
+        <span class="footer-copy">A project on code security testing and automation.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Re-enable when posts are present:
+  <script>
+    const input = document.getElementById('searchInput');
+    const hint  = document.getElementById('searchResults');
+    const posts = document.querySelectorAll('.blog-post');
+
+    input.addEventListener('keyup', () => {
+      const q = input.value.trim().toLowerCase();
+      let count = 0;
+      posts.forEach(p => {
+        const match = p.textContent.toLowerCase().includes(q);
+        p.style.display = match ? '' : 'none';
+        if (match) count++;
+      });
+      hint.textContent = q
+        ? `${count} post${count !== 1 ? 's' : ''} found`
+        : '';
+    });
+  </script>
+  -->
+
+</body>
+
+</html>
