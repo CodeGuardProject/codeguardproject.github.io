@@ -416,7 +416,7 @@ hr {
             rgba(124, 58, 237, 0.55) 0%,
             rgba(167, 139, 250, 0.25) 60%,
             rgba(255, 255, 255, 0.08) 100%),
-        url('assets/images/hero-bg.png') center/cover no-repeat;
+        url('assets/images/bg_landing_page.png') center/cover no-repeat;
     overflow: hidden;
 }
 
