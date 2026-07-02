@@ -93,6 +93,27 @@
       justify-content: center;
       margin-top: 2rem;
     }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .photo-gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photo-gallery img:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
   </style>
 </head>
 
@@ -120,7 +141,7 @@
   <main>
     <div class="hero" style="text-align: center;">
       <div class="container" style="display: flex; flex-direction: column; align-items: center;">
-        <p class="hero__label">Upcoming Event</p>
+        <p class="hero__label">Past Event</p>
         <h1>Unbreaking Access Control with AI Coding Agents?</h1>
         <p class="hero__sub">Can AI coding assistants help us fix access control—or are they just making things worse?
         </p>
@@ -136,10 +157,7 @@
           </div>
         </div>
 
-        <div class="event-action-buttons">
-          <a href="https://www.eventbrite.co.uk/e/unbreaking-access-control-with-ai-coding-agents-tickets-1990648090024"
-            target="_blank" rel="noopener noreferrer" class="btn btn--primary">Register Now</a>
-        </div>
+        <!-- Event registration closed -->
       </div>
     </div>
 
@@ -226,6 +244,23 @@
           <div style="margin-top: 1.5rem;">
             <a href="assets/images/event_images/event_2/material/accesscontrol.pdf" class="btn btn--primary"
               target="_blank" rel="noopener noreferrer" download>Download PDF</a>
+          </div>
+        </div>
+
+        <div class="event-gallery" style="margin-top: 4rem;">
+          <p class="section-label">Memories</p>
+          <h2>Photo Gallery</h2>
+          <p>A few snapshots from our engaging workshop and hackathon.</p>
+
+          <div class="photo-gallery">
+            <img src="assets/images/event_images/event_2/gallery/event_gallery_1.jpg" alt="Event gallery photo 1"
+              loading="lazy">
+            <img src="assets/images/event_images/event_2/gallery/event_gallery_2.jpg" alt="Event gallery photo 2"
+              loading="lazy">
+            <img src="assets/images/event_images/event_2/gallery/event_gallery_3.jpg" alt="Event gallery photo 3"
+              loading="lazy">
+            <img src="assets/images/event_images/event_2/gallery/event_gallery_4.jpg" alt="Event gallery photo 4"
+              loading="lazy">
           </div>
         </div>
 
